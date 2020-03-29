@@ -44,7 +44,7 @@ const TaskForm = () => {
         }}></Form.Control>
       </Form.Group>
       <div className="button-area">
-        <Button type="submit" variant="outline-primary" size="md" style={{ width: '100%' }} onClick={handleCreate} disabled={unCreatable}>Primary</Button>
+        <Button type="submit" variant="outline-primary" size="md" style={{ width: '100%' }} onClick={handleCreate} disabled={unCreatable}>タスクを作成する！</Button>
       </div>
     </Form>
   )

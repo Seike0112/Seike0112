@@ -1,11 +1,35 @@
+
 .bg {
   background-image: url(../components/homeBg.jpg);
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   height: 100vh;
 }
 
 .white {
+  font-family: 'Brush Script MT',sans-serif;
   color: white;
+  text-align: center;
+  padding-top: 13rem;
+  font-size: 4.5rem;
+}
+
+.at {
+  font-family: 'Brush Script MT',sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.my-name {
+  font-family: 'Brush Script MT',sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+.link-btn {
+  text-align: center;
+  font-family: 'Brush Script MT',sans-serif;
 }
