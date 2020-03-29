@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { DELETE_EVENT } from '../actions/index'
+import AppContext from '../contexts/AppContext'
 
 import { Col, Card, Button } from 'react-bootstrap';
 
-const Task = ({ event, dispatch }) => {
+const Task = ({ event }) => {
+  const { dispatch } = useContext(AppContext)
   const id = event.id
 
   const handleDelte = () => {

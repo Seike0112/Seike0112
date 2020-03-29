@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { CREATE_EVENT } from '../actions/index'
+import AppContext from '../contexts/AppContext'
 
 import { Form, Button } from 'react-bootstrap';
 
-const TaskForm = ({ state, dispatch }) => {
+const TaskForm = () => {
+  const { dispatch } = useContext(AppContext)
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
 
