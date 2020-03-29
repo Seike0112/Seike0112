@@ -4,7 +4,6 @@ import AppContext from '../contexts/AppContext'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Card, Row } from 'react-bootstrap';
-import '../styleSheet/Task.css'
 
 import Nav from './Nav'
 import TaskForm from './TaskForm'
