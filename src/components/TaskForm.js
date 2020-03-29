@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react'
 import { CREATE_EVENT } from '../actions/index'
 import AppContext from '../contexts/AppContext'
+import toastr from 'toastr'
+import 'toastr/build/toastr.min.css'
 
 import { Form, Button } from 'react-bootstrap';
 
@@ -18,6 +20,13 @@ const TaskForm = () => {
     })
     setTitle('')
     setBody('')
+    toastr.options = {
+      positionClass: 'toast-top-full-width',
+      hideDuration: 300,
+      timeOut: 3000
+    }
+    toastr.clear()
+    setTimeout(() => toastr.success('タスクを作成しました！'), 100)
   }
 
   const unCreatable = title === '' || body === ''

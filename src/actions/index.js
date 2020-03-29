@@ -1,2 +1,5 @@
 export const CREATE_EVENT = 'CREATE_EVENT'
 export const DELETE_EVENT = 'DELETE_EVENT'
+
+export const ADD_TASK_LOG = 'ADD_TASK_LOG'
+export const DELETE_ALL_LOGS = 'DELETE_ALL_LOGS'
