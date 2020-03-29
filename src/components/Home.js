@@ -1,13 +1,15 @@
 import React from 'react'
-import bg from '../image/homeBg.jpeg'
+import '../styleSheet/Home.css'
 
 const Home = () => {
   return (
     <React.Fragment>
-      <div style={{ backgroundImage: bg }}>
-        home
+      <div className="bg container-fluid">
+        <div>
+          <h1 className="white">HOGEHOGE~APP</h1>
+        </div>
       </div>
-    </React.Fragment>
+    </React.Fragment >
   )
 }
 
