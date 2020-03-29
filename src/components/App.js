@@ -12,7 +12,11 @@ import Task from './Task'
 
 
 const App = () => {
-  const [state, dispatch] = useReducer(reducer, [])
+  const initialState = {
+    events: []
+  }
+
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
     <AppContext.Provider value={{ state, dispatch }}>
@@ -25,7 +29,7 @@ const App = () => {
         </Card>
         <Row>
           {
-            state.map((event, index) => (<Task key={index} event={event} />))
+            state.events.map((event, index) => (<Task key={index} event={event} />))
           }
         </Row>
       </Container>
